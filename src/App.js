@@ -1,8 +1,7 @@
 import React from "react";
-// import { GlobalStyle } from "./GlobalStyled";
-import { Header, MenuPrincipal, Principal, Title, Footer } from "./styled"
+import { Header, MenuPrincipal, Principal, Title, Footer, GlobalStyle } from "./styled"
 import CardVideo from "./Componentes/CardVideo";
-import "./styles.css";
+
 
 
 export default function App() {
@@ -13,6 +12,8 @@ export default function App() {
   };
 
   return (
+    <>
+    <GlobalStyle/>
     <div>
       <div className="tela-inteira">
         <Header>
@@ -46,6 +47,6 @@ export default function App() {
         </Footer>
       </div>
     </div>
-
+    </>
   );
 }
